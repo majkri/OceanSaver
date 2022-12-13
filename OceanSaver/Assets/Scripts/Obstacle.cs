@@ -7,10 +7,12 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    private GameObject player;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +20,11 @@ public class Obstacle : MonoBehaviour
         if(collision.tag == "Border")
         {
             Destroy(this.gameObject); //This distroys the obstacle when it hits the side border to the left of the screen
+        }
+
+        else if(collision.tag == "Player")
+        {
+            Destroy(player.gameObject);
         }
     }
 }
