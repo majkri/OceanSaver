@@ -4,6 +4,7 @@ using UnityEngine;
 
 //This script was created with inspiration from this tutorial: https://www.youtube.com/watch?v=U3sT-T5bKX4&ab_channel=Hooson
 //Time in movie when script is created: 10:25
+// TEST 
 
 public class SpawnObstacles : MonoBehaviour
 {
