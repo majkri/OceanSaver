@@ -17,7 +17,7 @@ public class Obstacle : MonoBehaviour
     {
         if(collision.tag == "Border")
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject); //This distroys the obstacle when it hits the side border to the left of the screen
         }
     }
 }
