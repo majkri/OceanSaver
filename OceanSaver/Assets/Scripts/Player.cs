@@ -28,4 +28,15 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(0, playerDirection.y * playerSpeed);
     }
+
+    //The collision with collectibles in made with this tutorial: https://www.youtube.com/watch?v=DZ-3g31jk90&t=96s&ab_channel=Xlaugts
+    // Adding to the player script starts at 1:40
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Collectible"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
