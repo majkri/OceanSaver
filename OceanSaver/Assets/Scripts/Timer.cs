@@ -10,9 +10,15 @@ public class Timer : MonoBehaviour
     public float timeValue = 90;
     public Text timerText;
     public AudioSource source;
-    public GameObject gameOverPanel;
+    public GameObject Final_Time_10s;
+   
+    private Animator FlickerTime;
 
 
+    private void Start()
+    {
+        FlickerTime = gameObject.GetComponent<Animator>();
+    }
 
 
     //Update is called once per frame
@@ -36,10 +42,14 @@ public class Timer : MonoBehaviour
         {
             
                 source.enabled=true;
-
+            //FinalAnim_10s.SetActive(true);
+            FlickerTime.enabled = true;
+            
             if (timeValue <= 0)
             {
-                gameOverPanel.SetActive(true);
+
+                Final_Time_10s.SetActive(true);
+               
             }
         }
 
