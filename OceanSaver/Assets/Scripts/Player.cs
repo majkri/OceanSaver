@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float DieTimeCollectible;
     public float playerSpeed;
     private Rigidbody2D rb;
     private Vector2 playerDirection;
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Collectible"))
         {
-            Destroy(other.gameObject);
+            Destroy(other.gameObject, DieTimeCollectible);
         }
     }
 }

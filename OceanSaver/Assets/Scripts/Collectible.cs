@@ -16,6 +16,12 @@ public class Collectible : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             ScoreManager.instance.ChangeScore(CoinValue);
+            
+        }
+
+        if (other.gameObject.CompareTag("Border"))
+        {
+            Destroy(gameObject);
         }
     }
 }

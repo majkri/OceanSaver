@@ -36,7 +36,10 @@ public class SpawnCollectibles1 : MonoBehaviour
         float randomY = Random.Range(minY, maxY);
 
         Instantiate(collectible, transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
+
+       
     }
+
 }
 
 
