@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CoinValue: 1
+  floatingPoints: {fileID: 68137301255360286, guid: 69762250e54524746a06b88936895769, type: 3}
 --- !u!82 &-5017276395271542446
 AudioSource:
   m_ObjectHideFlags: 0

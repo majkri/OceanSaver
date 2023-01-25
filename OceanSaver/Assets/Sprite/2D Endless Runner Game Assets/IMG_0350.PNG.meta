@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 373d40b9970545d4993298155ff53654
+guid: 333ea2e6f7f17244388d5d810242358d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -115,7 +115,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IMG_0350_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 212
+        width: 2200
+        height: 1226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41dfc7de982a4eb42ad5c38cb502b793
+      internalID: 1669574228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_0350_1
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 2300.5
+        height: 1668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0c127750f8c8b499d9f8f3b5e46c8d
+      internalID: 846946562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +168,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IMG_0350_1: 846946562
+      IMG_0350_0: 1669574228
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
